@@ -43,7 +43,7 @@ function App() {
             container: mapboxElRef.current,
             style: "mapbox://styles/v27wu/ckc17x3wk17cj1ipetpotxufk",
             center: [16, 27], // initial geo location
-            zoom: 2 // initial zoom
+            zoom: 1.5 // initial zoom
         });
 
         // Add navigation controls to the top right of the canvas
@@ -167,11 +167,12 @@ function App() {
 
 
 
-    return ( < div className = "App" >
-        <
-        div className = "mapContainer" > { /* Assigned Mapbox container */ } < div className = "mapBox"
-        ref = { mapboxElRef }
-        /> </div > < /div>
+    return ( <div className = "App" >
+        <h2 style = {{ textAlign: "center" }} className = "title"> Covid - 19 Interactive Map </h2>
+        <div className = "mapContainer" > { /* Assigned Mapbox container */ } 
+        <div className = "mapBox" ref = { mapboxElRef }/> 
+        </div > 
+        </div>
     );
 }
 
